@@ -1,0 +1,54 @@
+/* Container to align cards horizontally */
+.app-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Ensures responsiveness */
+
+    margin-top: 150px; /* Adjust based on header height */
+    padding: 10px;
+  }
+  
+  /* Card Styling */
+  .app-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    min-height: 150px;
+    display: flex;
+    flex-direction: row; /* Keeps button inside aligned */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Button Styling */
+  .app-card button {
+    background: #007bff; /* Attractive blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 15px; /* Space from content */
+  }
+  
+  .app-card button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+  
