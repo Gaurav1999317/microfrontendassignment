@@ -45,10 +45,11 @@ module.exports = {
       name:'host',
       filename:"remoteEntry.js",
       remotes:{
-        "emailComponent":"emailComponent@http://localhost:3001/remoteEntry.js",
-        "chatComponent":"chatComponent@http://localhost:3000/remoteEntry.js"
+        "emailComponent":"emailComponent@https://microfrontendassignment-5xjf.vercel.app/remoteEntry.js",
+        "chatComponent":"chatComponent@https://microfrontendassignment.vercel.app/remoteEntry.js"
         },
-        
+        //http://localhost:3001/localhost url
+        //http://localhost:3000/
     }),
     new CleanWebpackPlugin(), // Cleans dist folder before build
     new HtmlWebpackPlugin({
